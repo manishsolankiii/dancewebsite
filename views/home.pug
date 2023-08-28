@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection
+        div Welcome to Manish's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    
+
+    section#missionSection
+        h2 Our mission
+        div.card
+          h3  Dance Perfection
+           div.card-box
+                div.card-img
+                    img(src="/static/dancelogo5.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+          h3 Dance the way you like
+           div.card-box
+                div.card-img
+                    img(src="/static/dancelogo4.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+          h3 Expert Teaching
+           div.card-box
+                div.card-img
+                    img(src="/static/dancelogo1.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors
+            img(src= "/static/Applelogo.png", alt= "Sponsor Image", class= "spImage")
+            img(src= "/static/hplogo.jpeg", alt= "Sponsor Image", class= "spImage")
+            img(src= "/static/microsoft.png", alt= "Sponsor Image", class= "spImage")
+            img(src= "/static/skypelogo.png", alt= "Sponsor Image", class= "spImage")
